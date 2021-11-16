@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
+    margin: 1%;
+}
+
+#logo {
+    width: 10%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+
+nav {
+    width: 90%;
+}
+
+li {
+    padding: 5px;
+    width: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#entete {
+    display: flex;
+    align-items: stretch;
+}
+
+aside {
+    width: 60%;
+}
+
+#texte-gauche {
+    width: 40%;
+    background-color: #491768;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#texte-gauche h1 {
+    width: 40%;
+    font-size: 60px;
+}
+
+#image-aside {
+    width: 100%;
+    height: auto;
+}
+
+#decouvrir,
+#candidature,
+#entreprise {
+    border-radius: 7px;
+}
+
+#candidature {
+    background-color: #bbc647;
+    padding: 10%;
+}
+
+#decouvrir {
+    background-color: #bbc647;
+    padding: 2%;
+    width: 40%;
+}
+
+#entreprise {
+    background-color: #491768;
+    color: #ffffff;
+    padding: 10%;
+}
+
+#tableau {
+    margin: 5%;
+}
+
+td {
+    border-bottom: 1px solid black;
+    padding: 1%;
+    width: 17%;
+}

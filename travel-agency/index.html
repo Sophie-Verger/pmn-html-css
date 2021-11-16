@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Agency</title>
+
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+
+</head>
+
+<body>
+
+  <header class="header-general">
+
+    <div class="header-mobile">
+
+      <img class="header menu-burger" onclick="navBar()" src="assets/images/menu.png" alt="icone du menu burger"
+        title="menu burger">
+
+      <img class="header logo" src="assets/images/plane.png" alt="logo avion du site" title="">
+      <h1 class="header title">Travel agency</h1>
+
+    </div>
+
+    <nav class="navBar">
+      <ul>
+        <li class="nav-home"><a href="index.php">Home</a></li>
+        <li class="nav-destinations"><a href="#">Destinations</a></li>
+        <li class="nav-deals"><a href="#">Deals</a></li>
+        <li class="nav-contacts"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="accueil-top">
+
+      <div class="index-recherche">
+        <h2>Find your holiday</h2>
+        
+        <form class="index-recherche-formulaire" action="">
+          <div class="index-recherche-formulaire-champs">
+
+            <div>
+              <label for="departure">From :</label>
+              <input type="text" name="departure" id="departure" placeholder="Paris">
+            </div>
+            
+            <div>
+              <label for="arrival">To :</label>
+              <input type="text" name="arrival" id="arrival" placeholder="Malte">
+            </div>
+            
+            <div>
+              <label for="date">Date :</label>
+              <input type="date" name="date" id="date" placeholder="04/11/2018">
+            </div>
+            
+            <div>
+              <label for="duration">Duration :</label>
+              <select name="duration" id="duration">
+                <option value="1days">1 day</option>
+                <option value="2days">2 days</option>
+                <option selected="selected" value="3days">3 days</option>
+                <option value="4days">4 days</option>
+                <option value="5days">5 days</option>
+                <option value="6days">6 days</option>
+                <option value="7days">7 days</option>
+                <option value="8days">8 days</option>
+                <option value="9days">9 days</option>
+                <option value="10days">10 days</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="accueil-recherche--button">
+            <input id="accueil-recherche-submit" type="submit" value="Find !">
+          </div>
+        </form>
+      </div>
+      
+      <aside class="deal-index-destination">
+        <img class="deal-index-destination-img" src="https://picsum.photos/300/200" alt="">
+        <h3>Deal of the day</h3>
+        <div class="deal-index-destination-bottom">
+          <div class="deal-index-destination-bottom-left">
+            <h2 class="deal-ville">Amsterdam</h2>
+            <p class="deal-index-destination-infos">Hotel Calypso</p>
+            <p class="deal-index-destination-infos">1 week</p>
+          </div>
+          <p class="deal-index-destination-prix">150 €</p>
+        </div>
+      </aside>
+      
+    </section>
+    
+
+    <h2 class="top-destinations">Top destinations</h2>
+
+    <div class="index-destinations-all">
+
+      <div class="index-destination">
+        <img class="index-destination-img" src="https://picsum.photos/300/200" alt="">
+        <h2 class="index-destination-ville">Sydney</h2>
+        <div class="index-destination-bottom">
+          <div class="index-destination-bottom-left">
+            <p class="index-destination-infos">Hotel Calypso</p>
+            <p class="index-destination-infos">1 week</p>
+          </div>
+          <p class="index-destination-prix">150 €</p>
+        </div>
+      </div>
+  
+      <div class="index-destination">
+        <img class="index-destination-img" src="https://picsum.photos/300/200" alt="">
+        <h2 class="index-destination-ville">Rio</h2>
+        <div class="index-destination-bottom">
+          <div class="index-destination-bottom-left">
+            <p class="index-destination-infos">Hotel Calypso</p>
+            <p class="index-destination-infos">1 week</p>
+          </div>
+          <p class="index-destination-prix">150 €</p>
+        </div>
+      </div>
+  
+      <div class="index-destination">
+        <img class="index-destination-img" src="https://picsum.photos/300/200" alt="">
+        <h2 class="index-destination-ville">Cusco</h2>
+        <div class="index-destination-bottom">
+          <div class="index-destination-bottom-left">
+            <p class="index-destination-infos">Hotel Calypso</p>
+            <p class="index-destination-infos">1 week</p>
+          </div>
+          <p class="index-destination-prix">150 €</p>
+        </div>
+      </div>
+  
+      <div class="index-destination">
+        <img class="index-destination-img" src="https://picsum.photos/300/200" alt="">
+        <h2 class="index-destination-ville">New Delhi</h2>
+        <div class="index-destination-bottom">
+          <div class="index-destination-bottom-left">
+            <p class="index-destination-infos">Hotel Calypso</p>
+            <p class="index-destination-infos">1 week</p>
+          </div>
+          <p class="index-destination-prix">150 €</p>
+        </div>
+      </div>
+  
+      <div class="index-destination">
+        <img class="index-destination-img" src="https://picsum.photos/300/200" alt="">
+        <h2 class="index-destination-ville">Hong Kong</h2>
+        <div class="index-destination-bottom">
+          <div class="index-destination-bottom-left">
+            <p class="index-destination-infos">Hotel Calypso</p>
+            <p class="index-destination-infos">1 week</p>
+          </div>
+          <p class="index-destination-prix">150 €</p>
+        </div>
+      </div>
+  
+      <div class="index-destination">
+        <img class="index-destination-img" src="https://picsum.photos/300/200" alt="">
+        <h2 class="index-destination-ville">Katmandou</h2>
+        <div class="index-destination-bottom">
+          <div class="index-destination-bottom-left">
+            <p class="index-destination-infos">Hotel Calypso</p>
+            <p class="index-destination-infos">1 week</p>
+          </div>
+          <p class="index-destination-prix">150 €</p>
+        </div>
+      </div>
+  
+      <div class="index-destination">
+        <img class="index-destination-img" src="https://picsum.photos/300/200" alt="">
+        <h2 class="index-destination-ville">Tokyo</h2>
+        <div class="index-destination-bottom">
+          <div class="index-destination-bottom-left">
+            <p class="index-destination-infos">Hotel Calypso</p>
+            <p class="index-destination-infos">1 week</p>
+          </div>
+          <p class="index-destination-prix">150 €</p>
+        </div>
+      </div>
+  
+      <div class="index-destination">
+        <img class="index-destination-img" src="https://picsum.photos/300/200" alt="">
+        <h2 class="index-destination-ville">Lisbonne</h2>
+        <div class="index-destination-bottom">
+          <div class="index-destination-bottom-left">
+            <p class="index-destination-infos">Hotel Calypso</p>
+            <p class="index-destination-infos">1 week</p>
+          </div>
+          <p class="index-destination-prix">150 €</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="orange-button" href="#">
+      <div class="orange">See more</div>
+    </a>
+
+  </main>
+
+  <footer>
+    <div class="footer1">
+      <div class="footer1-bloc">
+        <img src="assets/images/calculator.png" alt="icon of calculator" title="icon of calculator">
+      <p>Compare prices</p>
+      </div>
+      <div class="footer1-bloc">
+        <img src="assets/images/discount.png" alt="icon of promotion"
+          title="icon of promotion">
+        <p>Get the best deals</p>
+      </div>
+      <div class="footer1-bloc">
+        <img src="assets/images/support.png" alt="icon of online helper person"
+          title="icon of online helper person">
+        <p>7/7 support</p>
+      </div>
+      <div class="footer1-bloc">
+        <img src="assets/images/online-payment.png" alt="icon of payment card"
+          title="icon of payment card">
+        <p>Secure online payment</p>
+      </div>
+      
+    </div>
+
+    <div class="footer2">
+
+      <div class="footer2-links">
+        <h3>Links</h3>
+        <a class="footer-liens" href="index.html">Home</a>
+        <a class="footer-liens" href="#">Destinations</a>
+        <a class="footer-liens" href="#">Deals</a>
+        <a class="footer-liens" href="contact.html">Contact</a>
+        <a class="footer-liens" href="#">Terms & Conditions</a>
+      </div>
+
+      <div class="footer2-adress">
+        <h3>Adress</h3>
+        <p>15 rue de la paix</p>
+        <p>75010, Paris</p>
+        <p>France</p>
+        <a class="footer-liens" href="#">Other addresses</a>
+      </div>
+    
+      <div class="footer2-callUs">
+        <h3>Call Us</h3>
+        <p>+1 0805-540-801</p>
+      </div>
+
+    </div>
+    
+
+
+  </footer>
+
+
+
+  <script type="text/javascript" src="assets/js/navResponsive.js"></script>
+
+</body>
+index
