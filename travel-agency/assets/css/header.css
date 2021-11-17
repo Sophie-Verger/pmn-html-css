@@ -105,6 +105,16 @@ a {
     color: #ff5f2e;
 }
 
+.logo-agency {
+    text-decoration: none;
+    color: #004e66;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-left: 2%;
+}
+
+  
 
 
 
@@ -144,6 +154,11 @@ a {
         justify-content: center;
     }
 
+    .logo-agency {
+        width: 100%;
+        margin-left: 6%;
+    }
+  
 
 
 }
