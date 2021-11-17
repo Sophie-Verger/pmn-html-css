@@ -45,66 +45,74 @@
             <h2>Contact</h2>
         </div>
 
-        <form class="contact-form" action="">
+        <div class="contact-corps">
 
-            <div>
-                <label for="firstname">Firstname :</label>
-                <input type="text" name="firstname" id="firstname">
+
+            <form  action="">
+                
+                <div class="contact-form">
+
+                <div>
+                    <label for="firstname">Firstname :</label>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+
+                <div>
+                    <label for="lastname">Lastname :</label>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="nearestAgency">Nearest Agency :</label>
+                    <select name="nearestAgency" id="nearestAgency">
+                        <option selected="selected" value="paris">Paris</option>
+                        <option value="rome">Rome</option>
+                        <option value="losbonne">Lisbonne</option>
+                        <option value="londres">Londres</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="newYork">New-York</option>
+                    </select>
+                </div>
+
+                <div id="contact-message">
+                    <label for="message">Message :</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+
+                </div>
+
+                <div class="submit">
+                    <input id="submit" type="submit" value="Send">
+                </div>
+
+            </form>
+
+
+            <div class="contact-bas">
+                <div>
+                    <h3>Address</h3>
+                    <p>15 rue de la paix</p>
+                    <p>75010, Paris</p>
+                    <p>France</p>
+                    <p>+1 0805-540-801</p>
+                    <p><a href="#">Other addresses</a></p>
+                </div>
+
+                <div>
+                    <h3>Information</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quod adipisci quibusdam corrupti
+                    modi dolore cumque iure minima dicta deleniti aliquid eius architecto sed quaerat minus asperiores </p>
+                </div>
             </div>
 
-            <div>
-                <label for="lastname">Lastname :</label>
-                <input type="text" name="lastname" id="lastname">
-            </div>
 
-            <div>
-                <label for="email">Email :</label>
-                <input type="email" name="email" id="email">
-            </div>
-
-            <div>
-                <label for="nearestAgency">Nearest Agency :</label>
-                <select name="nearestAgency" id="nearestAgency">
-                    <option selected="selected" value="paris">Paris</option>
-                    <option value="rome">Rome</option>
-                    <option value="losbonne">Lisbonne</option>
-                    <option value="londres">Londres</option>
-                    <option value="madrid">Madrid</option>
-                    <option value="newYork">New-York</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="message">Message :</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            </div>
-         
-            <div class="submit">
-                <input id="submit" type="submit" value="Send">
-            </div>
-
-        </form>
-            
-
-        <div class="contact-bas">
-            <div>
-                <h3>Address</h3>
-                <p>15 rue de la paix</p>
-                <p>75010, Paris</p>
-                <p>France</p>
-                <p>+1 0805-540-801</p>
-                <p><a href="#">Other addresses</a></p>
-            </div>
-
-            <div>
-                <h3>Information</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quod adipisci quibusdam corrupti modi dolore cumque iure minima dicta deleniti aliquid eius architecto sed quaerat minus asperiores eligendi in voluptas voluptatem, nihil ipsam dolor illo nostrum vero. Quo doloribus omnis harum impedit perferendis aliquam pariatur. Ab debitis inventore eveniet culpa!</p>
-            </div>
         </div>
-
-       
-
-
 
     </main>
 
