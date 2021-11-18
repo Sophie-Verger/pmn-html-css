@@ -18,35 +18,33 @@
         transform: rotate(90deg);
     }
 
-    15% {
+    20% {
         top: 50px;
         left: 100px;
         transform: rotate(45deg);
     }
 
-    30% {
+    40% {
         top: 60px;
         left: 250px;
         transform: rotate(10deg);
     }
 
-    35% {
+    60% {
         top: 50px;
         left: 300px;
+        transform: rotate(0deg);
     }
 
-    50% {
-        top: 0px;
+   
+
+    65% {
+        top: -50px;
         left: 350px;  
     }
 
-    50% {
-        top: -10px;
-        left: 350px;
-        transform: rotate(-360deg);
-    }
 
-    55% {
+    85% {
         top: -100px;
         left: 400px;
         transform: rotate(-500deg);
@@ -54,7 +52,7 @@
 
     
 
-    90% {
+    95% {
         top: -200px;
         left: 0px;
     }
@@ -62,6 +60,6 @@
     to {
         top: 0px;
         left: 0px;
-        transform: rotate(0deg);
+        transform: rotate(145deg);
     }
 }
