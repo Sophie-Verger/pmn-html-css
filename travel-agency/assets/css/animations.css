@@ -3,13 +3,10 @@
 .logo {
     position: relative;
     transform: rotate(90deg);
-}
-
-.logo {
     transition: transform 1s;
     animation: bouce 10s cubic-bezier(0.26, 0.24, 0.66, 0.65) infinite;
-
 }
+
 
 @keyframes bouce {
     from {
@@ -23,43 +20,82 @@
         left: 100px;
         transform: rotate(45deg);
     }
-
     40% {
         top: 60px;
         left: 250px;
         transform: rotate(10deg);
     }
-
     60% {
         top: 50px;
         left: 300px;
         transform: rotate(0deg);
     }
-
-   
-
     65% {
         top: -50px;
         left: 350px;  
     }
-
-
     85% {
         top: -100px;
         left: 400px;
         transform: rotate(-500deg);
     }
-
-    
-
     95% {
         top: -200px;
         left: 0px;
     }
-
     to {
         top: 0px;
         left: 0px;
         transform: rotate(145deg);
+    }
+}
+
+.deal-index-destination:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+.index-destination {
+    position : relative;
+}
+
+.index-destination:before {
+    background-color: #ff5f2e;
+    content: "";
+    position: absolute;
+}
+
+.index-destination:before {
+    transition: transform 1s;
+    animation: border 6s ease infinite;
+}
+
+
+@keyframes border {
+    from {
+        top: 0%;
+        left: 0%;
+        width: 20%;
+        height: 3px;
+    }
+
+    17% {
+        top: 0%;
+        left: 50%;
+        width: 20%;
+        height: 3px;
+    }
+
+    25% {
+        top: 0%;
+        left: 99%;
+        width: 1%;
+        height: 3px;
+    }
+
+    26% {
+        top: 5;
+        right: 0;
+        width: 1%;
+        height: 3px;
     }
 }
