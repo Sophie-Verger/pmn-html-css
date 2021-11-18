@@ -1,50 +1,4 @@
-body {
-    margin: 0;
-}
 
-.header-mobile {
-    display: flex;
-}
-
-.header {
-    margin: 3%;
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-    margin-right: 0;
-}
-
-.menu-burger {
-    width: 40px;
-    height: 50px;
-}
-
-.navBar {
-    display : none;
-}
-
-.navBar ul {
-    list-style-type: none;
-    width: 100%;
-    padding-left: 0;
-    text-align: center;
-    padding: 4% 0;
-}
-
-.navBar ul li {
-    padding: 2% 0;
-}
-
-.nav-home {
-    color: #ff5f2e;
-}
-
-.nav-destinations, .nav-contacts, .nav-deals {
-    color: #004e66;
-;
-}
 
 .index-recherche {
     background-color: #004e66;
@@ -87,7 +41,17 @@ body {
     color:  #ffffff;
 }
 
-.index-destination,
+.index-destination {
+    position: relative;
+    display: flex;
+    margin: 15px 0;
+    height: 300px;
+    justify-content: space-between;
+    padding-left: 25px;
+    background: rgba(255, 255, 255, 0.5)
+}
+
+
 .deal-index-destination {
     position: relative;
     display: flex;
@@ -99,6 +63,27 @@ body {
     background: rgba(255, 255, 255, 0.5)
 }
 
+.deal-index-destination-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.deal-index-destination-bottom-left {
+    margin-bottom: 4%;
+}
+
+.index-destination-prix {
+    background-color: #fcbe32;
+    width: 16%;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    font-size: 26px;
+    font-weight: 500;
+
+}
+
 .index-destination-img,
 .deal-index-destination-img {
     position: absolute;
@@ -107,19 +92,17 @@ body {
     z-index: -1;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
 
-.index-destination-ville,
-.deal-index-destination-ville {
+.index-destination-left-ville {
     color: #ff5f2e;
     font-size: 40px;
 }
 
 .deal-ville {
     font-size: 40px;
-    margin: 0;
+    margin: 4% 0;
 }
 
 .top-destinations {
@@ -127,29 +110,34 @@ body {
     font-size: 40px;
 }
 
-.index-destination-prix,
-.deal-index-destination-prix {
+.index-destination-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 50px;
+    width: 16%;
+}
+
+.index-destination-right-prix {
     background-color: #fcbe32;
-    width: 20%;
-    padding: 15px 0;
+    width: 100%;
+    padding: 13px 0;
     text-align: center;
     border-radius: 5px 0 0 5px;
-    
+    font-size: 26px;
+    font-weight: 500;
 }
 
-.index-destination-bottom,
-.deal-index-destination-bottom {
+.index-destination-left {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: baseline;
+    margin-bottom: 4%;
 }
 
-.index-destination-bottom-left,
-.deal-index-destination-bottom-left {
-    margin-bottom: 5%;
-}
 
-.index-destination-infos, .deal-index-destination-infos {
+.index-destination-left-infos, .deal-index-destination-infos {
     font-style: italic;
     margin: 0;
 }
@@ -282,7 +270,22 @@ body {
         width: 34%;
     }
 
+    .orange-button {
+        background-color: transparent;
+        width: 100%;
+    }
 
+    .index-destination-right {
+        width: 35%;
+    }
+
+    .index-destination-left-ville {
+            white-space: nowrap;
+    }
+
+    .index-destination-left {
+        width: 50%;
+    }
 
 }
 

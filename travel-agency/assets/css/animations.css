@@ -1,3 +1,65 @@
 .logo {
+    position: relative;
     transform: rotate(90deg);
+}
+
+.logo {
+    transition: transform 1s;
+    animation: bouce 10s cubic-bezier(0.26, 0.24, 0.66, 0.65) infinite;
+
+}
+
+@keyframes bouce {
+    from {
+        top: 0px;
+        left: 0px;  
+        transform: rotate(90deg);
+    }
+
+    15% {
+        top: 50px;
+        left: 100px;
+        transform: rotate(45deg);
+    }
+
+    30% {
+        top: 60px;
+        left: 250px;
+        transform: rotate(10deg);
+    }
+
+    35% {
+        top: 50px;
+        left: 300px;
+    }
+
+    50% {
+        top: 0px;
+        left: 350px;  
+    }
+
+    50% {
+        top: -10px;
+        left: 350px;
+        transform: rotate(-360deg);
+    }
+
+    55% {
+        top: -100px;
+        left: 400px;
+        transform: rotate(-500deg);
+    }
+
+    
+
+    90% {
+        top: -200px;
+        left: 0px;
+    }
+
+    to {
+        top: 0px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
 }
