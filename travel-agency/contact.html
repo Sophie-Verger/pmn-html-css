@@ -19,8 +19,9 @@
 
     <header class="header-general">
 
-        <div class="header-mobile">
+        <!-- header - logo + nom site -->
 
+        <div class="header-mobile">
             <img class="header menu-burger" onclick="navBar()" src="assets/images/menu.png" alt="icone du menu burger"
                 title="menu burger">
 
@@ -28,8 +29,11 @@
                 <img class="header logo" src="assets/images/plane.png" alt="logo avion du site" title="">
                 <h1 class="header title">Travel agency</h1>
             </a>
-
         </div>
+
+        <!------------------------------->
+
+        <!--------- header - menu -------->
 
         <nav class="navBar">
             <ul>
@@ -40,52 +44,60 @@
             </ul>
         </nav>
 
+        <!-------------------------------------->
+
     </header>
 
     <main>
+
+        <!------- entete de la page ------->
+
         <div class="page-title">
             <img src="https://picsum.photos/1191/300" alt="">
             <h2>Contact</h2>
         </div>
 
+        <!---------------------------------->
+
         <div class="contact-corps">
 
+            <!--------  Formulaire de contact -------->
 
-            <form  action="">
-                
+            <form action="">
+
                 <div class="contact-form">
 
-                <div>
-                    <label for="firstname">Firstname :</label>
-                    <input type="text" name="firstname" id="firstname">
-                </div>
+                    <div>
+                        <label for="firstname">Firstname :</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
 
-                <div>
-                    <label for="lastname">Lastname :</label>
-                    <input type="text" name="lastname" id="lastname">
-                </div>
+                    <div>
+                        <label for="lastname">Lastname :</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
 
-                <div>
-                    <label for="email">Email :</label>
-                    <input type="email" name="email" id="email">
-                </div>
+                    <div>
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email">
+                    </div>
 
-                <div>
-                    <label for="nearestAgency">Nearest Agency :</label>
-                    <select name="nearestAgency" id="nearestAgency">
-                        <option selected="selected" value="paris">Paris</option>
-                        <option value="rome">Rome</option>
-                        <option value="losbonne">Lisbonne</option>
-                        <option value="londres">Londres</option>
-                        <option value="madrid">Madrid</option>
-                        <option value="newYork">New-York</option>
-                    </select>
-                </div>
+                    <div>
+                        <label for="nearestAgency">Nearest Agency :</label>
+                        <select name="nearestAgency" id="nearestAgency">
+                            <option selected="selected" value="paris">Paris</option>
+                            <option value="rome">Rome</option>
+                            <option value="losbonne">Lisbonne</option>
+                            <option value="londres">Londres</option>
+                            <option value="madrid">Madrid</option>
+                            <option value="newYork">New-York</option>
+                        </select>
+                    </div>
 
-                <div id="contact-message">
-                    <label for="message">Message :</label>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </div>
+                    <div id="contact-message">
+                        <label for="message">Message :</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
 
 
                 </div>
@@ -96,6 +108,9 @@
 
             </form>
 
+            <!--------------------------------->
+
+            <!-- informations de contact de l'entreprise -->
 
             <div class="contact-bas">
                 <div>
@@ -110,9 +125,12 @@
                 <div>
                     <h3>Information</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quod adipisci quibusdam corrupti
-                    modi dolore cumque iure minima dicta deleniti aliquid eius architecto sed quaerat minus asperiores </p>
+                        modi dolore cumque iure minima dicta deleniti aliquid eius architecto sed quaerat minus
+                        asperiores </p>
                 </div>
             </div>
+
+            <!----------------------------------->
 
 
         </div>
@@ -120,6 +138,8 @@
     </main>
 
     <footer>
+
+        <!-- Footer 1 - icones et petits textes -->
         <div class="footer1">
             <div class="footer1-bloc">
                 <img src="assets/images/calculator.png" alt="icon of calculator" title="icon of calculator">
@@ -140,6 +160,10 @@
             </div>
 
         </div>
+
+        <!----------------------------------->
+
+        <!------ footer 2 - liens ------>
 
         <div class="footer2">
 
@@ -167,6 +191,7 @@
 
         </div>
 
+        <!--------------------------------->
 
 
     </footer>
