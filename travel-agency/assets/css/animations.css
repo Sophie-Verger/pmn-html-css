@@ -1,5 +1,7 @@
 /* Feuille de style des animations */
 
+
+/* animation du logo */
 .logo {
     position: relative;
     transform: rotate(90deg);
@@ -50,15 +52,18 @@
     }
 }
 
+/* animation du deal of the day */
 .deal-index-destination:hover {
     transform: rotate(5deg) scale(1.05);
 }
 
+
+/* animation du des destinations au hover */
 .index-destination {
     position : relative;
 }
 
-.index-destination:before {
+.index-destination:hover:before {
     background-color: #ff5f2e;
     content: "";
     position: absolute;
@@ -66,7 +71,7 @@
 
 .index-destination:before {
     transition: transform 1s;
-    animation: border 6s ease infinite;
+    animation: border 1s cubic-bezier(1, 1, 0, -0.01) infinite;
 }
 
 
@@ -75,27 +80,42 @@
         top: 0%;
         left: 0%;
         width: 20%;
-        height: 3px;
-    }
-
-    17% {
-        top: 0%;
-        left: 50%;
-        width: 20%;
-        height: 3px;
+        height: 5px;
     }
 
     25% {
         top: 0%;
-        left: 99%;
-        width: 1%;
-        height: 3px;
+        left: 50%;
+        width: 20%;
+        height: 5px;
     }
 
-    26% {
-        top: 5;
-        right: 0;
-        width: 1%;
-        height: 3px;
+    50% {
+        top: 0%;
+        left: 80%;
+        width: 20%;
+        height: 5px;
     }
+
+    51% {
+        top: 100%;
+        left: 80%;
+        width: 20%;
+        height: 5px;
+    }
+
+    75% {
+        top: 100%;
+        left: 50%;
+        width: 20%;
+        height: 5px;
+    }
+
+    100% {
+        top: 100%;
+        left: 0%;
+        width: 20%;
+        height: 5px;
+    }
+
 }
